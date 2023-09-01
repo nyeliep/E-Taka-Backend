@@ -35,37 +35,37 @@ Before you begin, ensure you have met the following requirements:
 
 ### Installation
 
-# Step 1: Clone the repository
+### Step 1: Clone the repository
 ```sh
 git clone https://github.com/akirachix/LogicSpires-Backend.git
 ```
 
-# Step 2: Navigate to the project directory
+### Step 2: Navigate to the project directory
 ```sh
 cd LogicSpires-Backend
 ```
 
-# Step 3: Activate Virtual environment
+### Step 3: Activate Virtual environment
 ```sh
 python3 -m venv env
 ```
 
-# Step 4: Install the Python dependencies
+### Step 4: Install the Python dependencies
 ```sh
 pip install -r requirements.txt
 ```
 
-# Step 5: Migrate the database
+### Step 5: Migrate the database
 ```sh
 python manage.py migrate
 ```
 
-# Step 6: Create a superuser account for admin access (if needed)
+### Step 6: Create a superuser account for admin access (if needed)
 ```sh
 python manage.py createsuperuser
 ```
 
-# Step 7: Start the Django development server
+### Step 7: Start the Django development server
 ```sh
 python manage.py runserver
 ```
