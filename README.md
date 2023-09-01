@@ -39,33 +39,33 @@ To get LogicSpires-Backend up and running, follow these steps:
 
 1. Clone this repository to your local machine:
 
+     git clone https://github.com/akirachix/LogicSpires-Backend.git
 
-   git clone https://github.com/akirachix/LogicSpires-Backend.git
+2. Navigate to the project directory:
 
-2.Navigate to the project directory:
+     cd LogicSpires-Backend
 
-  cd LogicSpires-Backend
+3. Install the Python dependencies:
 
-3.Install the Python dependencies:
+     pip install -r requirements.txt
 
-  pip install -r requirements.txt
+4. Set up the PostgreSQL database:
 
-4.Set up the PostgreSQL database:
+     Create a PostgreSQL database for LogicSpires.
+     Configure the database connection in your Django settings.
 
-    Create a PostgreSQL database for LogicSpires.
-    Configure the database connection in your Django settings.
 
-5.Migrate the database:
+5. Migrate the database:
 
-  python manage.py migrate
+      python manage.py migrate
 
-6.Create a superuser account for admin access (if needed):
+6. Create a superuser account for admin access (if needed):
 
-  python manage.py createsuperuser
+      python manage.py createsuperuser
 
-7.Start the Django development server:
+7. Start the Django development server:
 
-  python manage.py runserver
+      python manage.py runserver
 
 Your backend should now be running at http://localhost:8000.
 
