@@ -26,8 +26,11 @@ jobs:
         with:
           python-version: '3.9'
 
-      - name: Install dependencies
+      - name: Install requirements
         run: pip install -r requirements.txt
+        
+      - name: Check Syntax 
+        run: pre-commit run --all-files 
 
       - name: Run test
         run: python manage.py test
@@ -38,8 +41,4 @@ jobs:
       - name: Run Server
         run: python manage.py runserver
 
-      - name: Install requirements
-        run: pip install -r requirements.txt
-        
-      - name: Check Syntax 
-        run: pre-commit run --all-files  
+ 
