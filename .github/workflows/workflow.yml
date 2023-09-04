@@ -6,6 +6,12 @@ on:
       - main
       - staging
       - dev
+      
+pull requests:
+    branches:
+      - main
+      - staging
+      - dev      
 
 jobs:
   build:
@@ -32,8 +38,8 @@ jobs:
       - name: Run Server
         run: python manage.py runserver
 
-      - name: Install requirements 
+      - name: Install requirements
         run: pip install -r requirements.txt
-
-      - name: Check Syntax
+        
+      - name: Check Syntax 
         run: pre-commit run --all-files  
