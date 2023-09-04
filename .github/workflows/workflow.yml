@@ -6,7 +6,8 @@ on:
       - main
       - staging
       - dev
-pull requests:
+
+  pull requests:
     branches:
       - main
       - staging
