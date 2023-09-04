@@ -1,0 +1,44 @@
+name: Backend CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+      - dev
+pull requests:
+    branches:
+      - main
+      - staging
+      - dev      
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run test
+        run: python manage.py test
+
+      - name: Make Migrations
+        run: python manage.py migrate
+
+      - name: Run Server
+        run: python manage.py runserver
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+        
+      - name: Check Syntax 
+        run: pre-commit run --all-files  
