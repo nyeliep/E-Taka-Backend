@@ -77,6 +77,13 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'etakadb',
+        'USER': 'oem',
+        'PASSWORD': 'logicSpires@2023',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'OPTIONS': {
+            'client_encoding': 'utf8',
+        },
     }
 }
 
