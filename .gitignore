@@ -8,5 +8,6 @@ etakadb
 
 # Ignore virtual environment directories
 myenv/
+.env
 
 
