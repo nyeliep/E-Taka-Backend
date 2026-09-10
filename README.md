@@ -1,6 +1,6 @@
-# LogicSpires-Backend
+# E-Taka-  Backend
 
-Welcome to the LogicSpires-Backend repository! This backend application powers the E-Taka project, an e-waste management platform dedicated to addressing the growing concern of electronic waste disposal and promoting recycling. Below, you'll find an overview and setup instructions.
+This backend application powers the E-Taka project, an e-waste management platform dedicated to addressing the growing concern of electronic waste disposal and promoting recycling. Below, you'll find an overview and setup instructions.
 
 ## Table of Contents
 
